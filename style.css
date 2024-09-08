@@ -1,0 +1,575 @@
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navigation bar styling */
+/* Make the navbar fixed at the top */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #151515;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+  z-index: 1000; /* Make sure the navbar is above other content */
+}
+
+/* Ensure the content does not overlap the fixed navbar */
+body {
+  padding-top: 90px; /* Adjust this value if your navbar height changes */
+}
+
+/* Navigation list styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Navigation list item styling */
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Navigation link styling */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation link underline effect */
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: #FFD300;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+/* Navigation link hover effect */
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: #FFD300; /* Highlight color for active section */
+  font-weight: 500; /* Make the active link bold */
+  /* border-bottom: 2px solid #FFD300; */
+}
+
+/* Styling for the contact button */
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Button color */
+  color: black;
+  margin-left: 15px; 
+  font-weight: 600;
+  border-radius: 50px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for the contact button */
+.contact-button:hover {
+  /* background-color: black;
+  color: #FFD300; */
+  transform: translateY(-3px);
+}
+
+.contact-button::after {
+  content: none; /* Disable the underline effect */
+}
+
+
+
+
+/* Styling specific elements */
+.surname {
+  color: #FFD300;
+}
+
+.left {
+  font-weight: 800;
+  font-size: 25px;
+  margin-left: 70px;
+}
+
+#element {
+  color: #FFD300;
+}
+.Hello{
+  font-size: 20px;
+}
+.purple {
+  color: #FFD300;
+}
+.passionate{
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* First section styling */
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.firstsection > div {
+  width: 50%;
+  font-weight: 900;  
+}
+
+.leftsection {
+
+  margin-left: 100px;
+  font-size: 54px;
+  line-height: 1.5;
+}
+
+
+/* Styling for the buttons */
+.button_c {
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: #FFD300; /* Button color */
+  color: black; /* Text color */
+  font-size: 15PX;
+  font-weight: 500;
+  border-radius: 50px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center text */
+  margin-top: 70px;
+  transition: transform 0.2s; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.button_c:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Align buttons horizontally */
+.leftsection .button_1,
+.leftsection .button_2 {
+  margin-right: 10px; /* Space between buttons */
+}
+
+.leftsection .button_2 {
+  background-color: #ffffff;
+  padding: 12px 30.5px;
+}
+
+.rightsection {                         /* Styling for the right section */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 50%;
+}
+
+
+.rightsection img {                   /* Right section image styling */
+  width: 70%;
+  margin-top: 0;
+  margin-right: 20px;
+
+}
+
+
+/*About Section css*/
+
+.about-section {
+  padding: 60px 0;
+  background-color: #141414;
+  color: #ffffff;
+  text-align: left;
+}
+
+.about-section h1 {
+  width: 100%;
+}
+.about-span{
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 150px;
+}
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-left,
+.about-right {
+  width: 50%;
+  flex: 1;
+  min-width: 280px; /* Ensure layout is responsive */
+  margin: 10px;
+}
+
+.about-image {
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-right {
+  flex: 2;
+  padding-left: 40px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 45px;
+  color: #a2a2a2;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.info-content {
+  line-height: 30px;
+  color: #a2a2a2;
+}
+
+
+/*Resume section css*/
+
+.resume-section {
+  padding: 60px 0;
+  background-color: #141414;
+  color: rgb(217, 217, 217);
+  margin-top: 50px;
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.resume-container h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.resume-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resume-box {
+  background-color: rgb(34, 34, 34);
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(140 140 140 / 10%);
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  min-width: 515px;
+  max-width: 515px;
+  height: 185px;
+  transition: transform 0.3s ease;
+}
+
+.resume-box:hover {
+  transform: translateY(-5px);
+}
+
+.resume-box h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #FFC107;
+}
+
+.resume-box p, .resume-box ul {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.resume-box ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.download-resume {
+  margin-top: 40px;
+}
+
+.download-resume a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #FFC107;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.download-resume a:hover {
+  background-color: #dda600;
+}
+
+
+/*Project section css*/
+
+.projects-section {
+  padding: 60px 0;
+  background-color: #141414;
+  color: white;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Changed from space-between for better centering */
+}
+
+.project-box {
+  background-color: rgb(255, 255, 255);
+  border: 0px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 0 1 40%; /* Changed from flex: 1; to make boxes larger */
+  height: 325px;
+  max-width: 70%; /* Adjusted max-width to make boxes larger */
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-box h3 {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: black;
+  font-weight: 400;
+}
+
+.project-box a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 18px;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Socials section css*/
+
+.socials-section {
+  background-color: #141414;
+  padding: 100px 0; /* Increase the padding for more space above */
+  text-align: center;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-container h2 {
+    margin-top: 66px;
+    margin-bottom: 131px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Space between icons */
+  color: rgb(235, 220, 18);
+  margin-bottom: 80px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Keeps the color of the text the same */
+}
+
+.social-icon img {
+  width: 100px; /* Adjust icon size */
+  height: 100px; /* Adjust icon size */
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+
+.social-icon p {
+  margin-top: 10px;
+  font-size: 14px; /* Adjust text size */
+  font-weight: 300;
+}
+
+/*Contacts section css*/
+
+.contacts-section {
+  padding: 60px 0; /* Space above and below the section */
+  text-align: center;
+  background-color: #141414; /* Light background for contrast */
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-container h2 {
+  margin-top: 20px;
+  margin-bottom: 50px; /* Space below the heading */
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+  margin-top: 40px;
+  margin-bottom: 40px; /* Space between icons and contact details */
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-icon img {
+  width: 95px; /* Icon size */
+  height: 95px; /* Icon size */
+  transition: transform 0.3s;
+  border-radius: 50%;
+}
+
+.contact-icon img:hover {
+  transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+
+.contact-icon p {
+  margin-top: 20px;
+  font-size: 17px; /* Text size below icons */
+  font-weight: 400;
+}
+.contact-icon h5{
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 300;
+  color: rgb(255, 225, 0);
+  min-width: 263px;
+}
+
+.contact-details {
+  font-size: 16px; /* Font size for contact details */
+}
+
+.contact-details p {
+  margin: 10px 0; /* Space between contact details */
+}
+
+/* Footer Section */
+
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  padding: 0 0;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid #333;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
